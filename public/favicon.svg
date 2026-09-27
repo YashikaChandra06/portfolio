@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEDFE4" />
+      <stop offset="50%" stop-color="#C96F82" />
+      <stop offset="100%" stop-color="#8F4F60" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#C96F82" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="28" fill="#FFF7F8" />
+  <rect x="4" y="4" width="92" height="92" rx="24" fill="none" stroke="#FED6DE" stroke-width="2" />
+  <text x="50" y="62" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#8F4F60" text-anchor="middle" letter-spacing="-1">YC</text>
+  <circle cx="76" cy="34" r="5" fill="#C96F82" />
+</svg>
