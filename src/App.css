@@ -1692,6 +1692,50 @@
   color: var(--color-rose-deep);
 }
 
+.paper-pill.published-pill {
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+[data-theme="dark"] .paper-pill.published-pill {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.paper-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.paper-link-btn {
+  padding: 0.75rem 1.45rem;
+  font-size: 0.92rem;
+}
+
+.paper-citation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.citation-check {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
 .paper-footer-disclaimer {
   padding: 0.95rem 1.25rem;
   border-radius: var(--radius-md);

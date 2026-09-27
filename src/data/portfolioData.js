@@ -301,15 +301,18 @@ export const projectsData = [
 ];
 
 export const researchData = {
-  title: "Carbon-Aware Autonomous AI Systems: Reinforcement Learning for Sustainable Cloud Computing",
-  subtitle: "Workload Optimization in Distributed Cloud Infrastructure",
-  status: "Research Initiative & Investigation",
+  title: "Carbon-Aware Autonomous AI Systems: Reinforcement Learning For Sustainable Cloud And Edge Computing",
+  subtitle: "Autonomous Workload Optimization in Distributed Cloud & Edge Infrastructure",
+  status: "Published Research Article",
+  journal: "STM Journals",
+  paperUrl: "https://journals.stmjournals.com/article/article=2026/view=249526/",
   description:
-    "Proposed reinforcement-learning-based scheduling for carbon-aware cloud workload optimization, with a focus on reducing energy consumption in distributed cloud infrastructure.",
+    "Published research proposing reinforcement-learning-based scheduling for carbon-aware cloud and edge workload optimization, with a focus on reducing energy consumption and carbon emissions across distributed computational infrastructure.",
   keyConcepts: [
     "Reinforcement Learning",
     "Carbon-aware computing",
     "Sustainable cloud computing",
+    "Edge computing",
     "Workload scheduling",
     "Distributed infrastructure",
     "Energy optimization"
@@ -317,7 +320,7 @@ export const researchData = {
   abstractHighlights: [
     "Investigation into dynamically adapting compute workloads according to real-time grid carbon intensity signals.",
     "Formulation of reinforcement learning agent rewards balancing QoS latency constraints against kilowatt-hour carbon footprints.",
-    "Exploration of intelligent job migration strategies across distributed heterogeneous nodes."
+    "Exploration of intelligent job migration strategies across distributed heterogeneous cloud and edge nodes."
   ]
 };
 

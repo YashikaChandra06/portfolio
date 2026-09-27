@@ -10,7 +10,8 @@ import {
   Briefcase,
   Code,
   Award,
-  Sparkles
+  Sparkles,
+  BookOpen
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 import {
@@ -18,6 +19,7 @@ import {
   skillsData,
   experienceData,
   projectsData,
+  researchData,
   certificationsData,
   leadershipData
 } from "../data/portfolioData";
@@ -178,6 +180,24 @@ export default function ResumeModal({ isOpen, onClose }) {
                 </div>
               </div>
             ))}
+          </section>
+
+          {/* Publications & Research */}
+          <section className="sheet-section">
+            <h3 className="sheet-section-title">
+              <BookOpen size={15} /> Publications &amp; Research
+            </h3>
+            <div className="sheet-entry">
+              <div className="entry-row">
+                <span className="entry-title">{researchData.title}</span>
+                <span className="entry-time">{researchData.status} (2026)</span>
+              </div>
+              <div className="entry-sub">{researchData.journal} &middot; Peer-Reviewed Article</div>
+              <p className="entry-desc">{researchData.description}</p>
+              <div className="entry-notes">
+                <strong>Publication URL:</strong> {researchData.paperUrl}
+              </div>
+            </div>
           </section>
 
           {/* Leadership & Certifications */}

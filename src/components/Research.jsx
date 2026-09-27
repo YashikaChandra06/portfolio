@@ -1,14 +1,12 @@
 import React from "react";
 import {
   BookOpen,
-  FileCode2,
   Cpu,
   Leaf,
-  Layers,
   Sparkles,
-  ArrowRight,
-  Bookmark,
-  Share2
+  ExternalLink,
+  BookmarkCheck,
+  CheckCircle2
 } from "lucide-react";
 import { researchData } from "../data/portfolioData";
 
@@ -18,10 +16,10 @@ export default function Research() {
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
-          <span className="section-tag">Scientific Inquiry &amp; Systems</span>
+          <span className="section-tag">Scientific Publications</span>
           <h2 className="section-title">Research</h2>
           <p className="section-subtitle">
-            Exploring the intersection of autonomous reinforcement learning models, distributed cloud infrastructure, and carbon footprint reduction.
+            Published scientific research exploring reinforcement learning, carbon-aware workload scheduling, and sustainable cloud and edge infrastructure.
           </p>
         </div>
 
@@ -30,11 +28,11 @@ export default function Research() {
           {/* Header Banner */}
           <div className="paper-top-bar">
             <div className="paper-status-indicator">
-              <span className="paper-pill">
-                <Bookmark size={13} />
-                Research Paper &amp; Investigation
+              <span className="paper-pill published-pill">
+                <BookmarkCheck size={14} />
+                {researchData.status}
               </span>
-              <span className="paper-field">Cloud Computing &middot; Artificial Intelligence</span>
+              <span className="paper-field">Cloud &amp; Edge Computing &middot; Artificial Intelligence</span>
             </div>
             <div className="paper-domain-tag">
               <Leaf size={14} className="leaf-icon" /> Sustainable AI
@@ -86,10 +84,29 @@ export default function Research() {
             </div>
           </div>
 
+          {/* Action Row & Publication Link */}
+          <div className="paper-action-row">
+            <a
+              href={researchData.paperUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary paper-link-btn"
+              aria-label="Read published research article in STM Journals (opens in new tab)"
+            >
+              <span>Read Published Article</span>
+              <ExternalLink size={16} />
+            </a>
+
+            <div className="paper-citation-badge">
+              <CheckCircle2 size={15} className="citation-check" />
+              <span>Published &amp; Indexed in <strong>{researchData.journal}</strong> (2026)</span>
+            </div>
+          </div>
+
           {/* Academic Integrity Footnote */}
           <div className="paper-footer-disclaimer">
             <span>
-              <strong>Note on Academic Status:</strong> Ongoing academic research initiative at GGSIPU. Formal preprint and open-source benchmarks under structured iteration.
+              <strong>Publication Reference:</strong> Published in <em>STM Journals</em> (2026). Full-text peer-reviewed paper available via official journal repository link above.
             </span>
           </div>
         </div>

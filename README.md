@@ -30,6 +30,15 @@ This portfolio website highlights Yashika Chandra's engineering journey, technic
 
 ---
 
+## 📄 Publications & Research
+
+- **[Carbon-Aware Autonomous AI Systems: Reinforcement Learning For Sustainable Cloud And Edge Computing](https://journals.stmjournals.com/article/article=2026/view=249526/)**
+  - **Journal**: *STM Journals* (2026)
+  - **Focus**: Reinforcement learning, carbon-aware workload scheduling, and sustainable distributed infrastructure.
+  - **Article Link**: [View on STM Journals Portal](https://journals.stmjournals.com/article/article=2026/view=249526/)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19, Vite, Vanilla CSS Design System, Lucide Icons
